@@ -1,0 +1,8 @@
+Ejercicios tema 5 SparkSQL
+
+    -Leer baby-names.csv y crear la vista baby_names_view
+    -Hacer describe de baby_names_view (con .sql)
+    -Hacer Select de baby_names_view (con .sql)
+    -Crear tabla hive con baby-names.csv
+    -Insertar registro (con .sql)
+    -Escribir (SaveAsTable) en local en modo append

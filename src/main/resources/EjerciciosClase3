@@ -1,0 +1,34 @@
+Ejercicio Tema 3 Funciones:
+
+   Leer en spark el fichero baby-names.csv
+    1- Lectura infiriendo el schema. Llamar al DF "babesNDF"
+    2- Lectura especificando el schema
+
+           year: integer (nullable = true)
+           name: string (nullable = true)
+           percent: double (nullable = true)
+           sex: string (nullable = true)
+
+ // (MOSTRAR SIEMPRE EL RESULTADO USANDO SHOW() SALVO QUE SE INDIQUE QUE SE DEBE CREAR EL DF)
+
+    3- Recuperar el primer registro del DF babesNDF
+    4- Seleccionar todos los campos cambiando el nombre de la columna:
+
+        year -> año
+        name -> nombre
+        percent -> percentil
+        sex -> sexo
+
+    5- Añadir Columna "genero" (creando nuevo DataFrame):
+        (ver equal operator http://community.cloud.databricks.com)
+           Cuando "sex" === "boy"     => "genero" = "Masculino"
+           Cuando "sex" === "girl"    => "genero" = "Femenino"
+
+    6- Borrar columna "sex" (creando nuevo DataFrame)
+
+    7- Filtrar por Columna "genero":
+        "genero" === "Masculino"
+
+    8- Agrupar por "year" y "genero" y hacer count del genero. Ordenar por "year" y "genero"
+
+
